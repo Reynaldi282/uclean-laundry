@@ -32,11 +32,11 @@ class ProfileController extends Controller
         $password = Hash::make($request->password);
       }
       $profile = User::findOrFail($id);
-      $profile->name      = $request->name;
-      $profile->email     = $request->email;
-      $profile->alamat    = $request->alamat;
-      $profile->foto      = $nama_foto ?? Auth::user()->foto;
-      $profile->password  = $password ?? Auth::user()->password;
+      $profile->name          = $request->name;
+      $profile->phone_number  = $request->phone_number;
+      $profile->alamat        = $request->alamat;
+      $profile->foto          = $nama_foto ?? Auth::user()->foto;
+      $profile->password      = $password ?? Auth::user()->password;
       $profile->save();
 
       Session::flash('success','Data profile berhasil diupdate !');

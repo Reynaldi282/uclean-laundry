@@ -20,8 +20,10 @@ import Vue from 'vue'
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
 // Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-Vue.component('contenone', require('./components/Contentone.vue').default);
-Vue.component('contentwo', require('./components/Contentwo.vue').default);
+Vue.component('background', require('./components/background.vue').default);
+Vue.component('vision', require('./components/vision.vue').default);
+Vue.component('services', require('./components/services.vue').default);
+Vue.component('methods', require('./components/methods.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

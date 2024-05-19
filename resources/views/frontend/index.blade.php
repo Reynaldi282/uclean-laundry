@@ -1,5 +1,5 @@
 @extends('layouts.frontend')
-@section('title','Selamat Datang')
+@section('title','U-Clean Laundry Depok | Wet Clean with Personal Care')
 @section('header')
   @include('frontend.header')
 @endsection

@@ -3,8 +3,7 @@
 
 ## Requirements
 
-* Version 1.x , 2.x or 3.x use PHP 7.3 (Framework Laravel 8) [Versi 3.x](https://github.com/andes2912/laundry/tree/3.x)
-* Version 3.1 use PHP 8.0 (Framework Laravel 9) [Versi 3.1](https://github.com/andes2912/laundry/tree/3.1)
+* PHP 8.0 (Framework Laravel 9)
 * Database (eg: MySQL)
 * Web Server (eg: Apache, Nginx, IIS)
 
@@ -15,7 +14,6 @@ Laundry dibangun menggunakan [Laravel](http://laravel.com), the best existing PH
 ## Installation
 
 * Install [Composer](https://getcomposer.org/download) and [Npm](https://nodejs.org/en/download)
-* Clone the repository: `git clone https://github.com/andes2912/laundry.git`
 * Install dependencies: `composer install ; npm install ; npm run dev`
 * Run `cp .env.example .env` for create .env file
 * Run `php artisan migrate --seed` for migration database
@@ -24,11 +22,8 @@ Laundry dibangun menggunakan [Laravel](http://laravel.com), the best existing PH
 * Run `php artisan queue:listen` for run queue
 
 Note : Aplikasi ini akan terus saya update.<br>
-Kalau ada pertanyaan bisa kontak aku di email ini <b>andridesmana29@outlook.com</b>
+Kalau ada pertanyaan bisa kontak aku di email ini <b>reynaldi@omahku-id.com</b>
 </p>
-
-## Package
-- [IndoBank](https://github.com/andes2912/indobank) package Laravel untuk menyimpan data Nama Bank yang ada di Indonesia
 
 
 ## Fitur Release

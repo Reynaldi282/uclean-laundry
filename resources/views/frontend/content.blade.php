@@ -1,5 +1,4 @@
-{{-- Content --}}
-<contenone></contenone>
-
-<contentwo></contentwo>
-{{-- End Content --}}
+<background></background>
+<vision></vision>
+<services></services>
+<methods></methods>
