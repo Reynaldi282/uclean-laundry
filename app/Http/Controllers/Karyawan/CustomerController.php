@@ -35,6 +35,11 @@ class CustomerController extends Controller
       return view('karyawan.customer.detail', compact('customer'));
     }
 
+    public function edit($id){
+      $customer = User::where('id',$id)->first();
+      return view('karyawan.customer.edit', compact('customer'));
+    }
+
     // Create
     public function create()
     {

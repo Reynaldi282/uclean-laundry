@@ -39,6 +39,7 @@
                                 </td>
                                 <td>
                                   <a href="{{route('customer.show', $item->id)}}" class="btn btn-info btn-sm">Info</a>
+                                  <a href="{{route('customer.show', $item->id)}}" class="btn btn-info btn-sm">Edit</a>
                                 </td>
                             </tr>
                             <?php $no++; ?>

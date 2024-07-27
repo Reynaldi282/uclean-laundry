@@ -75,6 +75,7 @@ Route::middleware('auth')->group(function () {
     Route::get('customers/{id}','Karyawan\CustomerController@detail');
     Route::get('customers-create','Karyawan\CustomerController@create');
     Route::post('customers-store','Karyawan\CustomerController@store');
+    Route::post('customers-edit/{id}','Karyawan\CustomerController@edit');
 
     // Filter
     Route::get('listharga','Karyawan\PelayananController@listharga');
