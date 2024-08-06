@@ -251,10 +251,13 @@ Terima kasih
         if (setNotificationWhatsappOrderSelesai(1) == 1 && getTokenWhatsapp() != null) {
           $waCustomer = $transaksi->customers->no_telp; // get nomor whatsapp customer
           $nameCustomer = $transaksi->customers->name; // get name customer
+          $noInvoice = $transaksi->invoice; // get invoice
+          $poin = $points->point; // get point customer
           notificationWhatsapp(
             getTokenWhatsapp(), // Token
             $waCustomer, // nomor whatsapp
-            'Halo Kak ' . $nameCustomer . ' Laundry kamu sudah selesai dan sudah bisa diambil nih :) ' // pesan
+            'Halo Kak ' . $nameCustomer . ' Laundry kamu dengan nomor invoice '.$noInvoice.' sudah selesai dan sudah bisa diambil nih :)
+Sekarang Poin kamu adalah '.$poin // pesan
           );
         }
       } elseif ($transaksi->status_order == 'Done') {

@@ -12,9 +12,9 @@
                     <div class="card rounded-0 mb-0 px-2">
                         <div class="card-header pb-1">
                             @if($message = Session::get('error'))
-                              <div class="alert alert-danger alert-block">
+                            <div class="alert alert-danger alert-block">
                                 <strong>{{ $message }}</strong>
-                              </div>
+                            </div>
                             @endif
                             <div class="card-title">
                                 <h4 class="mb-0">Masuk</h4>
@@ -23,27 +23,27 @@
                         <p class="px-2">Selamat Datang, Masuk Menggunakan Akun Kamu.</p>
                         <div class="card-content">
                             <div class="card-body pt-1">
-                                <form action="{{route('login')}}" method="POST">
+                                <form action="{{ route('login') }}" method="POST">
                                     @csrf
                                     <fieldset class="form-label-group form-group position-relative has-icon-left">
-                                        <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" id="email" placeholder="E-Mail" value="{{ old('email') }}">
-                                        @error('email')
-                                          <span class="invalid-feedback text-danger" role="alert">
+                                        <input type="text" name="login" class="form-control @error('login') is-invalid @enderror" id="login" placeholder="Email or Phone Number" value="{{ old('login') }}">
+                                        @error('login')
+                                        <span class="invalid-feedback text-danger" role="alert">
                                             <strong>{{ $message }}</strong>
-                                          </span>
+                                        </span>
                                         @enderror
                                         <div class="form-control-position">
                                             <i class="feather icon-user"></i>
                                         </div>
-                                        <label for="email">E-Mail</label>
+                                        <label for="login">Email or Phone Number</label>
                                     </fieldset>
 
                                     <fieldset class="form-label-group position-relative has-icon-left">
                                         <input type="password" name="password" class="form-control @error('password') is-invalid @enderror" id="user-password" placeholder="Password">
                                         @error('password')
-                                          <span class="invalid-feedback text-danger" role="alert">
+                                        <span class="invalid-feedback text-danger" role="alert">
                                             <strong>{{ $message }}</strong>
-                                          </span>
+                                        </span>
                                         @enderror
                                         <div class="form-control-position">
                                             <i class="feather icon-lock"></i>

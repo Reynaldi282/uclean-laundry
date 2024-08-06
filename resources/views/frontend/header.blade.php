@@ -27,8 +27,6 @@
                 <li><a href="#vision">Vision</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#methods">Methods</a></li>
-                <li><a href="#clients">Clients</a></li>
-                <li><a href="#equipments">Equipments</a></li>
                 <li><a href="#contact">Contact</a></li>
                 @auth
                 <li> <a href="{{url('/home')}}">Welcome, {{ Auth::user()->name }}</a> </li>

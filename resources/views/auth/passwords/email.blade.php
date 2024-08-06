@@ -46,33 +46,36 @@
             <div class="content-header row">
             </div>
             <div class="content-body">
-              @if (session('status'))
+                @if (session('status'))
                 <div class="alert alert-success" role="alert">
                     {{ session('status') }}
                 </div>
-              @endif
+                @endif
                 <div class="auth-wrapper auth-v1 px-2">
                     <div class="auth-inner py-2">
                         <!-- Forgot Password -->
                         <div class="card mb-0">
                             <div class="card-body">
                                 <a href="javascript:void(0);" class="brand-logo">
-                                    <h2 class="brand-text text-primary ml-1">E-Laundry</h2>
+                                    <h2 class="brand-text text-primary ml-1">OmahKu Laundry</h2>
                                 </a>
                                 <h4 class="card-title mb-1">Lupa Password? 🔒</h4>
-                                <p class="card-text mb-2">Masukkan email Anda dan kami akan mengirimkan instruksi untuk mereset kata sandi Anda</p>
+                                <p class="card-text mb-2">Masukkan email atau nomor handphone (WA) Anda yang terdaftar dan kami akan mengirimkan instruksi untuk mereset kata sandi Anda</p>
                                 <form class="auth-forgot-password-form mt-2" action="{{ route('password.email') }}" method="POST">
-                                  @csrf
+                                    @csrf
                                     <div class="form-group">
-                                        <label for="forgot-password-email" class="form-label">Email</label>
-                                        <input type="email" class="form-control  @error('email') is-invalid @enderror" id="email" name="email" value="{{ old('email') }}" placeholder="andri@example.com"/>
-                                        @error('email')
-                                            <span class="invalid-feedback text-danger" role="alert">
-                                                <strong>{{ $message }}</strong>
-                                            </span>
+                                        <input type="text" name="login" class="form-control @error('login') is-invalid @enderror" id="login" placeholder="Email or Phone Number" value="{{ old('login') }}">
+                                        @error('login')
+                                        <span class="invalid-feedback text-danger" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
                                         @enderror
+                                        <div class="form-control-position">
+                                            <i class="feather icon-user"></i>
+                                        </div>
+                                        <label for="login">Email or Phone Number</label>
                                     </div>
-                                    <button type="submit" class="btn btn-primary btn-block" >Kirim Reset </button>
+                                    <button type="submit" class="btn btn-primary btn-block">Kirim Reset </button>
                                 </form>
 
                                 <p class="text-center mt-2">

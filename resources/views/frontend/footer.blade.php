@@ -24,8 +24,6 @@
                   <li><i class="ion-ios-arrow-right"></i> <a href="#vision">Vision</a></li>
                   <li><i class="ion-ios-arrow-right"></i> <a href="#services">Services</a></li>
                   <li><i class="ion-ios-arrow-right"></i> <a href="#methods">Methods</a></li>
-                  <li><i class="ion-ios-arrow-right"></i> <a href="#clients">Clients</a></li>
-                  <li><i class="ion-ios-arrow-right"></i> <a href="#equipments">Equipments</a></li>
                 </ul>
                 </div>
                 <!-- end section-container -->

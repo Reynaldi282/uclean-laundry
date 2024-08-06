@@ -26,6 +26,7 @@ Route::middleware('auth')->group(function () {
 
     // Customer
     Route::resource('customer','Admin\CustomerController');
+    Route::put('customer-update/{id}','Admin\CustomerController@update');
 
     // Data Transaksi
     Route::resource('transaksi','Admin\TransaksiController');
@@ -75,7 +76,8 @@ Route::middleware('auth')->group(function () {
     Route::get('customers/{id}','Karyawan\CustomerController@detail');
     Route::get('customers-create','Karyawan\CustomerController@create');
     Route::post('customers-store','Karyawan\CustomerController@store');
-    Route::post('customers-edit/{id}','Karyawan\CustomerController@edit');
+    Route::get('customers-edit/{id}','Karyawan\CustomerController@edit');    
+    Route::put('customers-update/{id}','Karyawan\CustomerController@update');
 
     // Filter
     Route::get('listharga','Karyawan\PelayananController@listharga');

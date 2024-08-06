@@ -52,7 +52,7 @@
                         <div class="card mb-0">
                             <div class="card-body">
                                 <a href="javascript:void(0);" class="brand-logo">
-                                    <h2 class="brand-text text-primary ml-1">E-Laundry</h2>
+                                    <h2 class="brand-text text-primary ml-1">OmahKu Laundry</h2>
                                 </a>
 
                                 <h4 class="card-title mb-1">Reset Password 🔒</h4>
@@ -63,7 +63,7 @@
                                   <input type="hidden" name="token" value="{{ $token }}">
                                     <div class="form-group">
                                         <div class="d-flex justify-content-between">
-                                            <label for="password">Email</label>
+                                            <label for="password">Email or Phone NUmber</label>
                                         </div>
                                         <div class="input-group input-group-merge">
                                             <input type="email" class="form-control @error('email') is-invalid @enderror" value=" {{ $email ?? old('email') }} " id="email" name="email"/>

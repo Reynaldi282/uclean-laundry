@@ -31,15 +31,15 @@
                                 <td>{{$item->alamat}}</td>
                                 <td>{{$item->no_telp}}</td>
                                 <td>
-                                    @if ($item->kelamin == 'L')
+                                    @if ($item->jenis_kelamin == 'Laki-laki')
                                         <span class="label label-success">Laki-laki</span>
-                                    @else
+                                    @elseif (($item->jenis_kelamin == 'Perempuan'))
                                         <span class="label label-info">Perempuan</span>
                                     @endif
                                 </td>
                                 <td>
                                   <a href="{{route('customer.show', $item->id)}}" class="btn btn-info btn-sm">Info</a>
-                                  <a href="{{route('customer.show', $item->id)}}" class="btn btn-info btn-sm">Edit</a>
+                                  <a href="{{route('customer.edit', $item->id)}}" class="btn btn-info btn-sm">Edit</a>
                                 </td>
                             </tr>
                             <?php $no++; ?>
