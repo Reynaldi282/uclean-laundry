@@ -7,13 +7,14 @@
 	<meta charset="utf-8" />
 	<title>@yield('title')</title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
-  <meta name="description" content="E-Laundy aplikasi laundry berbasis website">
+  <meta name="description" content="OmahKu Laundry aplikasi laundry berbasis website">
   <meta name="keywords" content="E-Laundry,Laundry">
-  <meta name="author" content="Andri Desmana">
+  <meta name="author" content="PT. Trisuku Inti Griya Abadi">
 
 	<!-- ================== BEGIN BASE CSS STYLE ================== -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="manifest" href="{{asset('frontend/manifest/manifest.json')}}">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 	<link href="{{asset('frontend/plugins/bootstrap3/css/bootstrap.min.css')}}" rel="stylesheet" />
 	<link href="{{asset('frontend/plugins/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" />
