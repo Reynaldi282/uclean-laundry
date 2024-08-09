@@ -117,9 +117,9 @@ PERHATIAN :
   1. Pengambilan barang harap disertai nota
   2. Barang yang tidak diambil selama 1 bulan, hilang / rusak tidak diganti
   3. Barang hilang/rusak karena proses pengerjaan diganti maksimal 5x biaya.
-  4. Klaim luntur tidak dipisah diluar tanggungan
-  5. Hak klaim berlaku 2 jam setelah barang diambil
-  6. Setiap konsumen dianggap setuju dengan isi perhitungan tersebut diatas tanpa memerlukan bukti atau dokumen lainnya.
+  4. Klaim pakaian luntur dan tidak dipisah diluar tanggungan
+  5. Hak klaim berlaku 24 jam setelah barang diambil/diantar
+  6. Setiap konsumen dianggap setuju dengan isi perhitungan tersebut diatas tanpa memerlukan bukti atau dokumen lainnya.
 
 Terima kasih
             "
