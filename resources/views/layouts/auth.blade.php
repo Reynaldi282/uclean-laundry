@@ -6,12 +6,13 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <meta name="description" content="E-Laundy aplikasi laundry berbasis website">
+    <meta name="description" content="OmahKu Laundry aplikasi laundry berbasis website">
     <meta name="keywords" content="E-Laundry,Laundry">
-    <meta name="author" content="Andri Desmana">
+    <meta name="author" content="PT. Trisuku Inti Griya Abadi">
     <title>@yield('title')</title>
     <link rel="apple-touch-icon" href="{{asset('backend/images/ico/apple-icon-120.png')}}">
     <link rel="shortcut icon" type="image/x-icon" href="{{asset('backend/images/ico/favicon.ico')}}">
+    <link rel="manifest" href="{{asset('backend/manifest/manifest.json')}}">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
 
     <!-- BEGIN: Vendor CSS-->
