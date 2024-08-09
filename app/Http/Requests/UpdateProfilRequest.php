@@ -25,7 +25,6 @@ class UpdateProfilRequest extends FormRequest
     {
         return [
           'name'      => 'required',
-          'email'     => 'required',
           'no_telp'   => 'required',
           'alamat'    => 'required',
           'password'  => 'confirmed|min:8|nullable'
@@ -36,7 +35,6 @@ class UpdateProfilRequest extends FormRequest
     {
       return [
         'name.required'       => 'Nama tidak boleh kosong.',
-        'email.required'      => 'Email tidak boleh kosong.',
         'no_telp.required'    => 'No WhatsApp tidak boleh kosong.',
         'alamat.required'     => 'Alamat tidak boleh kosong.',
         'password.min'        => 'Password minimal berjumlah 8 karakter.',
